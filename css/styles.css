@@ -9,6 +9,13 @@
   text-align: center;
 }
 
+.description {
+  max-width: 450px;
+  line-height: 1.3;
+  text-align: justify;
+  margin-inline: auto;
+}
+
 .main {
   display: flex;
   flex-direction: column;
