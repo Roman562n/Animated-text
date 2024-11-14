@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.title {
+  font-size: 48px;
+  text-align: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
