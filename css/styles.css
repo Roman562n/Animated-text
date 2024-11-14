@@ -79,3 +79,8 @@
     rotate: 360deg;
   }
 }
+
+.subtitle {
+  font-size: 24px;
+  text-align: center;
+}
