@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__button {
+  --buttonWidth: 150px;
+
+  width: var(--buttonWidth);
+  background-color: #000000;
+  border: #000000 1px solid;
+  border-radius: 16px;
+  padding-inline: 50px;
+  padding-block: 15px;
+  color: #ffffff;
+  margin-block: 30px;
+  transition: all .2s;
+}
+
+.main__button:hover {
+  background-color: #ffffff;
+  border: #000000 1px solid;
+  color: #000000;
+}
+
+/* .main__button:hover + .main__rectangle {
+  background-color: #ffffff;
+  border: #000000 solid 1px;
+} */
+
+.main__rectangle {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border: #000000 solid 1px;
+  translate: -75px;
+  rotate: 0;
+  transition: all .2s;
+
+  animation: my-animation 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes my-animation {
+
+  25% {
+    background-color: #000000;
+    border: #000000 solid 1px;
+  }
+
+  75% {
+    background-color: #ffffff;
+    border: #000000 solid 1px;
+  }
+
+  100% {
+    translate: 75px;
+    rotate: 360deg;
+  }
+}
