@@ -89,3 +89,9 @@
   max-width: 450px;
   margin-inline: auto;
 }
+
+.form__button {
+  border: 1px solid red;
+  background-color: transparent;
+  border-radius: 5px;
+}
