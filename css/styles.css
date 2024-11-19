@@ -90,6 +90,12 @@
   margin-inline: auto;
 }
 
+.form__button {
+  border: 1px solid red;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
 .table {
   border-collapse: collapse;
 }
@@ -100,4 +106,3 @@
 
 .table__delay {
   border: 1px solid black;
-}
