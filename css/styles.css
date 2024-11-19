@@ -95,3 +95,14 @@
   background-color: transparent;
   border-radius: 5px;
 }
+
+.table {
+  border-collapse: collapse;
+}
+
+.table__head {
+  border: 2px solid black;
+}
+
+.table__delay {
+  border: 1px solid black;
