@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+.header__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
 .title {
   font-size: 48px;
   text-align: center;
