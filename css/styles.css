@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+.beta-line {
+  white-space: nowrap;
+  background-color: black;
+  color: #ffffff;
+}
+
 .main {
   display: flex;
   flex-direction: column;
