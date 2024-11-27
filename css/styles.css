@@ -4,39 +4,64 @@
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 1300px;
+  --container-padding-x: 15px;
+
+  --font-family-accent: Doto, sans-serif;
+
+  --section-padding-y: 50px;
+}
+
 body {
   margin: 0;
 }
 
-.header__line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  background-color: #000000;
-  color: #ffffff;
-  white-space: nowrap;
-}
-
-.title {
-  font-size: 48px;
+h1 {
+  font-size: 100px;
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+  color: blueviolet;
   text-align: center;
+  margin-block: 40px;
 }
 
-.description {
-  max-width: 450px;
+h2 {
+  font-size: 48px;
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  color: blueviolet;
+  text-align: center;
+  margin-block: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.section {
+  padding-block: var(--section-padding-y);
+}
+
+.animation-test__description {
   line-height: 1.3;
-  text-align: justify;
+  /* text-align: justify; */
   margin-inline: auto;
 }
 
-.main {
+.animation-test__body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main__button {
+.animation-test__button {
   --buttonWidth: 150px;
 
   width: var(--buttonWidth);
@@ -48,26 +73,23 @@ body {
   color: #ffffff;
   margin-block: 30px;
   transition: all .2s;
+  margin-bottom: 20px;
 }
 
-.main__button:hover {
+.animation-test__button:hover {
   background-color: #ffffff;
   border: #000000 1px solid;
   color: #000000;
 }
 
-/* .main__button:hover + .main__rectangle {
-  background-color: #ffffff;
-  border: #000000 solid 1px;
-} */
-
-.main__rectangle {
+.animation-test__rectangle {
   width: 30px;
   height: 30px;
   background-color: #000000;
   border: #000000 solid 1px;
   translate: -75px;
   rotate: 0;
+  margin-bottom: 20px;
   transition: all .2s;
 
   animation: my-animation 2s;
@@ -94,10 +116,46 @@ body {
   }
 }
 
-.subtitle {
-  font-size: 24px;
-  text-align: center;
+.text-wrapping__inner {
+  max-width: 250px;
+  border: 3px solid blue;
 }
+
+.text-wrapping {
+  font-size: 32px;
+}
+
+.text-wrapping__oneline {
+  font-size: 32px;
+  background-color: antiquewhite;
+  margin-block: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-wrapping__multiline {
+  font-size: 32px;
+  background-color: antiquewhite;
+  margin: 0; /* Убираем внешний отступ */
+  -webkit-line-clamp: 3; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+#my-list li:nth-child(2) {
+  color: red;
+}
+
+.parent .child {
+  color: blue;
+}
+
+.parent .child.active {
+  color: aqua;
+}
+
 
 .form {
   max-width: 450px;

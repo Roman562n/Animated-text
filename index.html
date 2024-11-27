@@ -6,61 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animation</title>
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <h1 class="title">Animation test</h1>
-  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam quo ad deserunt aliquam ea
-    fugit rerum explicabo tenetur maxime possimus cupiditate natus consectetur nobis mollitia numquam corrupti commodi,
-    molestiae iste impedit. Nihil officiis quos voluptates, quo quia odit dolor enim, quasi tempora sunt temporibus
-    suscipit? Sapiente reprehenderit blanditiis velit!</p>
-  <div class="main">
-    <button class="main__button" type="button">Click</button>
-    <div class="main__rectangle">
-    </div>
-  </div>
+  <main class="content">
+    <h1>My test page</h1>
 
-  <h2 class="subtitle">Animation</h2>
-  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae itaque est dolorum ipsam dolorem atque quod adipisci sequi voluptatem officia, pariatur similique. Fuga repellendus a aut saepe sequi ab.</p>
-  <form action="" class="form">
-    <input type="text" class="form__input" required>
-    <button class="form__button" type="reset">Reset</button>
-  </form>
-      
-  <h2 class="subtitle">Motion</h2>
-  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae itaque est dolorum ipsam dolorem atque quod adipisci sequi voluptatem officia, pariatur similique. Fuga repellendus a aut saepe sequi ab.</p>
+    <section class="container section">
+      <div class="animation-test">
+        <h2>Animation</h2>
+        <p class="animation-test__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum maxime quaerat facere necessitatibus, hic quidem voluptate repudiandae ullam illum debitis doloribus accusantium pariatur ipsam, porro possimus a? Libero illum id quod laborum quaerat modi officiis consectetur suscipit, cum sed ullam delectus itaque voluptate soluta ab repellendus error provident fuga voluptas maiores ratione necessitatibus nulla iure non. Molestiae, voluptatem dolor. Excepturi odit laboriosam neque facilis sapiente consectetur aliquid voluptates sequi distinctio ipsum nam fugit nesciunt adipisci laborum quas, praesentium est, maiores, aperiam repudiandae tenetur inventore impedit. Harum, odit ipsam. Soluta, ut. Aliquid perferendis impedit odit. Omnis, id? Ad, vel voluptatum.</p>
+        <div class="animation-test__body">
+          <button class="animation-test__button" type="button">Click</button>
+          <div class="animation-test__rectangle">
+          </div>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae itaque est dolorum
+          ipsam
+          dolorem atque quod adipisci sequi voluptatem officia, pariatur similique. Fuga repellendus a aut saepe sequi ab.
+        </p>
+      </div>
+    </section>
 
-  <h2 class="subtitle">Multiplication</h2>
+    <section class="container section">
+      <h2>Text wrapping</h2>
+      <div class="text-wrapping__inner">
+        <!-- <p class="text-wrapping">SuperDuperMegaPuper-LargeWord 
+          一二三四五六七八九十、いろはにほへとちりぬるを、わかよたれそつねならむ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam expedita suscipit aliquam officiis voluptas optio nemo odio.
+        </p> -->
+        <p class="text-wrapping">Lorem ipsum dolor,
+sit amet consectetur adipisicing elit.
+Temporibus tenetur, molestias voluptates,
+iste nisi nobis cumque, quis optio earum id mollitia natus dolorum vitae! Blanditiis 
+ipsa nostrum dicta inventore   placeat!
+        </p>
 
-  <table class="table">
-    <tr>
-      <th class="table__head">*</th>
-      <th class="table__head">0</th>
-      <th class="table__head">1</th>
-      <th class="table__head">2</th>
-      <th class="table__head">3</th>
-      <th class="table__head">4</th>
-      <th class="table__head">5</th>
-      <th class="table__head">6</th>
-      <th class="table__head">7</th>
-      <th class="table__head">8</th>
-      <th class="table__head">9</th>
-    </tr>
-    <tr>
-      <th class="table__head">5</th>
-      <td class="table__delay">0</td>
-      <td class="table__delay">5</td>
-      <td class="table__delay">10</td>
-      <td class="table__delay">15</td>
-      <td class="table__delay">20</td>
-      <td class="table__delay">25</td>
-      <td class="table__delay">30</td>
-      <td class="table__delay">35</td>
-      <td class="table__delay">40</td>
-      <td class="table__delay">45</td>
-    </tr>
-  </table>
+      </div>
+
+      <p class="text-wrapping__oneline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum?</p>
+
+      <p class="text-wrapping__multiline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, accusantium fugiat. Delectus a sapiente libero voluptate. Laudantium, illo distinctio? Consectetur, architecto dolor sapiente in laudantium eligendi pariatur soluta, eveniet, voluptate tenetur blanditiis quae adipisci a. Doloremque ipsam, eum magni ex ullam commodi sapiente debitis a laudantium necessitatibus maiores excepturi architecto!</p>
+
+      <div class="parent">
+        <div class="child">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis minima omnis ipsum. Voluptates, nihil?</div>
+        <div class="child active">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis minima omnis ipsum. Voluptates, nihil?</div>
+      </div>
+
+      <ol class="my-list">
+        <li class="my-item">One</li>
+        <li class="my-item">Two</li>
+        <li class="my-item">Three</li>
+      </ol>
+      <ol class="my-list" id="my-list">
+        <li class="my-item">One</li>
+        <li class="my-item">Two</li>
+        <li class="my-item">Three</li>
+      </ol>
+
+
+    </section>
+
+    <form action="" class="form">
+      <input type="text" class="form__input" required>
+      <button class="form__button" type="reset">Reset</button>
+    </form>
+
+    <h2 class="subtitle">Motion</h2>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae itaque est dolorum ipsam
+      dolorem atque quod adipisci sequi voluptatem officia, pariatur similique. Fuga repellendus a aut saepe sequi ab.
+    </p>
+    <h2 class="subtitle">Multiplication</h2>
+    <table class="table">
+      <tr>
+        <th class="table__head">*</th>
+        <th class="table__head">0</th>
+        <th class="table__head">1</th>
+        <th class="table__head">2</th>
+        <th class="table__head">3</th>
+        <th class="table__head">4</th>
+        <th class="table__head">5</th>
+        <th class="table__head">6</th>
+        <th class="table__head">7</th>
+        <th class="table__head">8</th>
+        <th class="table__head">9</th>
+      </tr>
+      <tr>
+        <th class="table__head">5</th>
+        <td class="table__delay">0</td>
+        <td class="table__delay">5</td>
+        <td class="table__delay">10</td>
+        <td class="table__delay">15</td>
+        <td class="table__delay">20</td>
+        <td class="table__delay">25</td>
+        <td class="table__delay">30</td>
+        <td class="table__delay">35</td>
+        <td class="table__delay">40</td>
+        <td class="table__delay">45</td>
+      </tr>
+    </table>
+    <h2 class="subtitle">Iframe test</h2>
+    <a href="https://ya.ru/" target="_blank">Link to Yandex</a>
+
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Af434c1b8be38330daad2a6a1922434fc4311be5c3b3c6f00acb004253bb61cda&amp;source=constructor"
+      width="500" height="400" frameborder="0"></iframe>
+    <iframe width="720" height="405" src="https://rutube.ru/play/embed/14179384bd8d1d75841c1d50094a329c/"
+      frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+      allowFullScreen></iframe>
+    <iframe src="https://aleksanderlamkov.ru/" width="500" height="500"></iframe>
+  </main>
 
 </body>
 
